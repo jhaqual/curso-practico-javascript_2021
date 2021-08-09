@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto: Implementar descuentos con cupones | Curso práctico de JavaScript - Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>Implementando descuentos con cupones</h1>
+    </header>
+
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+        <h3> Solución #1: arrays y switch</h3>
+
+        <form action="">
+            <label for="inputPrice">Escribe el precio de tu producto</label>
+            <input id="inputPrice" type="number" />
+            <br><br>
+
+            <label for="inputCoupon">Escribe el cupón de descuento para tu producto: </label>
+            <input id="inputCoupon" type="text" />
+            <br><br>
+
+            <button type="button" onclick="buttonPriceDiscount()">
+                Switch - Calcular el precio con descuento
+            </button>
+
+            <p id="resultPrice"></p> 
+        </form>
+    </section>
+
+<hr>
+<hr>
+
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+        <h3> Solución #2: legibilidad, error first y muerte al switch</h3>
+
+        <form action="">
+            <label for="ifPrice">Escribe el precio de tu producto</label>
+            <input id="ifPrice" type="number" />
+            <br><br>
+
+            <label for="ifCoupon">Escribe el cupón de descuento para tu producto: </label>
+            <input id="ifCoupon" type="text" />
+            <br><br>
+
+            <button type="button" onclick="ifButtonPriceDiscount()">
+                IF - Calcular el precio con descuento
+            </button>
+
+            <p id="ifResultPrice"></p>
+        </form>
+    </section>
+
+<hr>
+<hr>
+
+<section>
+    <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+    <h3> Solución #3: arrays y condicionales mucho más inteligentes</h3>
+
+    <form action="">
+        <label for="arrayPrice">Escribe el precio de tu producto</label>
+        <input id="arrayPrice" type="number" />
+        <br><br>
+
+        <label for="arrayCoupon">Escribe el cupón de descuento para tu producto: </label>
+        <input id="arrayCoupon" type="text" />
+        <br><br>
+
+        <button type="button" onclick="arrayButtonPriceDiscount()">
+            Array - Calcular el precio con descuento
+        </button>
+
+        <p id="arrayResultPrice"></p>
+    </form>
+</section>
+
+    <script src="./cupones.js"></script>
+</body>
+</html>
+
+

@@ -18,17 +18,17 @@
     
         <form action="">
             <label for="inputPrice">Escribe el precio de tu producto</label>
-            <input type="text" id="inputPrice" type="number" />
+            <input id="inputPrice" type="number" />
             <br><br>
 
-            <label for="inputDiscount">Escribe el precio de tu producto</label>
-            <input type="text" id="inputDiscount" type="number" />
+            <label for="inputDiscount">Escribe el porcentaje de descuento</label>
+            <input id="inputDiscount" type="number" />
             <br><br>
 
             <button type="button" onclick="buttonPriceDiscount()">
                 Calcular el precio con descuento
             </button>
-            
+
 <!-- Este ultimo parrafo 👇 permitirá que se refleje el resultado en la página evitando usar alert -->
             <p id="resultPrice"></p>
         </form>
