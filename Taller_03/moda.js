@@ -14,7 +14,7 @@ const lista1 = [
 
 const lista1Count = {};
 
-lista1.map(
+lista1.map(  // el metodo map nos ayuda a recorrer nuestro array
   function (elemento) {
     if (lista1Count[elemento]) {
       lista1Count[elemento] += 1;
@@ -24,11 +24,10 @@ lista1.map(
   }
 );
 
-const lista1Array = Object.entries(lista1Count).sort(
+const lista1Array = Object.entries(lista1Count).sort( //Object.entries
   function (elementoA, elementoB) {
     return elementoA[1] - elementoB[1];
   }
 );
 
 const moda = lista1Array[lista1Array.length - 1];
-
